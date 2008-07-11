@@ -1,10 +1,10 @@
 #
-# $Id: LooseCSV.pm,v 1.5 2003/07/03 04:23:08 rsandberg Exp $
+# $Id: LooseCSV.pm,v 1.6 2007/11/21 04:23:08 rsandberg Exp $
 #
 
 package Text::LooseCSV;
 
-$VERSION = 1.5;
+$VERSION = 1.6;
 
 use strict;
 
@@ -218,8 +218,8 @@ same character to be included in a field.
 e.g. for a tab-delimited file where WORD_LINE_DELIMITER_ESCAPE => '\'
 follows is a sample record with an embedded newline:
 
-S<meE<gt>TABE<lt>youE<gt>TABE<lt>this is a single field that contains an escaped line terminator\
-an escaped tab\E<gt>TABE<lt> and an actual \\E<gt>TABE<lt>this is the next field...>
+S<meE<lt>TABE<gt>youE<lt>TABE<gt>this is a single field that contains an escaped line terminator\
+an escaped tab\E<lt>TABE<gt> and an actual \\E<lt>TABE<gt>this is the next field...>
 
 Do not use WORD_LINE_DELIMITER_ESCAPE for data with fields that are enclosed in
 quotes.
@@ -677,6 +677,8 @@ sub form_record
 
 =pod
 
+=back
+
 =head1 BUGS
 
 None as yet. This code has been used at several production sites before publishing to the public.
@@ -684,12 +686,12 @@ None as yet. This code has been used at several production sites before publishi
 
 =head1 AUTHORS
 
-Reed Sandberg (reed_sandberg 'AT' yahoo dot com)
+Reed Sandberg, E<lt>reed_sandberg Ӓ yahooE<gt>
 
 
 =head1 COPYRIGHT
 
-Copyright (C) 2001-2005 Reed Sandberg
+Copyright (C) 2001-2007 Reed Sandberg
 All rights reserved. This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
 

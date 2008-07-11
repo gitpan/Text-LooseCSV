@@ -1,4 +1,4 @@
-Text-LooseCSV version 1.5
+Text-LooseCSV version 1.6
 =========================
 
 Highly forgiving variable length record text parser; compare to MS Excel
@@ -18,7 +18,7 @@ This module is all perl and should run with versions 5.005 on up.
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2001-2005 Reed Sandberg (reed_sandberg 'AT' yahoo dot com)
+Copyright (C) 2001-2007 Reed Sandberg
 All rights reserved. This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
 
